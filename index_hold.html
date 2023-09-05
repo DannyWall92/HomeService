@@ -1,0 +1,284 @@
+<!DOCTYPE html> 
+<html> 
+	<head>
+        <title>Home Service App</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" />
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+        <script type="text/javascript" src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script>
+        <style>/*
+            .ui-page {
+                background: url("Logo.png");
+                background-position: center;
+                background-repeat: no-repeat;
+                opacity: 0.5;
+            } */
+        </style>
+    </head> 
+    <body> 
+
+        <div data-role="page" id="home">
+            <div data-role="header">
+                <h1>Home Service App</h1>
+            </div> <!-- /header -->
+            
+            <div data-role="content">
+                <a href="#schedule_main" data-role="button">Home Service Schedule</a>
+                <a href="#contact-hvac" data-role="button">Contact Heating/Air Conditioning Repair</a>
+                <a href="#contact-plumbing" data-role="button">Contact Plumbing Repair</a>
+                <a href="#contact-electrical" data-role="button">Contact Electrical Repair</a>
+
+            </div><!-- /content -->
+        </div><!-- /page -->
+
+        <div data-role="page" id="schedule_main">
+            <div data-role="header">
+                <h1>Maintenance Schedule Main Menu</h1>
+            </div> <!-- /header -->
+            
+            <div data-role="content">
+                <a href="#todo" data-role="button">Service To Be Completed</a>
+                <a href="#monthly" data-role="button">Set Monthly Reminders</a>
+                <a href="#spring" data-role="button">Set Spring Reminders</a>
+                <a href="#summer" data-role="button">Set Summer Reminders</a>
+                <a href="#fall" data-role="button">Set Fall Reminders</a>
+                <a href="#winter" data-role="button">Set Winter Reminders</a>
+
+            </div><!-- /content -->
+        </div><!-- /page -->
+
+        <div data-role="page" id="monthly">
+            <div data-role="header">
+                <h1>Monthly Maintenance Schedule</h1>
+            </div> <!-- /header -->
+            
+            <div data-role="content">
+                <h2>Set Reminders For:</h2>
+
+                <hr /><form>
+                    <label for="clean_furnace_filter">Clean Furnace Filter:</label>
+                    <select id="clean_furnace_filter" name="clean_furnace_filter" data-role="slider">
+                        <option value="off">Off</option>
+                        <option value="on">On</option>
+                    </select>
+                </form>
+
+                <hr /><form>
+                    <label for="faucets">Clean Faucet Aerators and Shower Heads:</label>
+                    <select id="faucets" name="faucets" data-role="slider">
+                        <option value="off">Off</option>
+                        <option value="on">On</option>
+                    </select>
+                </form>
+
+                <hr /><form>
+                    <label for="alarms_gfi">Test Smoke&Carbon Monoxide Alarms, Extinguisers, and GFI Circuts:</label>
+                    <select id="alarms_gfi" name="alarms_gfi" data-role="slider">
+                        <option value="off">Off</option>
+                        <option value="on">On</option>
+                    </select>
+                </form>
+
+                <hr /><form>
+                    <label for="inspect_cords">Inspect Electrical Cords For Wear:</label>
+                    <select id="inspect_cords" name="inspect_cords" data-role="slider">
+                        <option value="off">Off</option>
+                        <option value="on">On</option>
+                    </select>
+                </form>
+
+                <hr /><form>
+                    <label for="vacuum_registers">Vacuum Heat Registers and Vents:</label>
+                    <select id="vacuum_registers" name="vacuum_registers" data-role="slider">
+                        <option value="off">Off</option>
+                        <option value="on">On</option>
+                    </select>
+                </form>
+
+                <hr /><form>
+                    <label for="blocked_vents">Check that vents are not blocked and nothing has been placed too close to the furnace:</label>
+                    <select id="blocked_vents" name="blocked_vents" data-role="slider">
+                        <option value="off">Off</option>
+                        <option value="on">On</option>
+                    </select>
+                </form>
+
+                <hr /><form>
+                    <label for="flush_hotwater">Flush out hot water heater:</label>
+                    <select id="flush_hotwater" name="flush_hotwater" data-role="slider">
+                        <option value="off">Off</option>
+                        <option value="on">On</option>
+                    </select>
+                </form>
+
+                <hr /><form>
+                    <label for="clean_disposal">Clean garbage disposal:</label>
+                    <select id="clean_disposal" name="clean_disposal" data-role="slider">
+                        <option value="off">Off</option>
+                        <option value="on">On</option>
+                    </select>
+                </form>
+
+            </div><!-- /content -->
+        </div><!-- /page -->
+
+        <div data-role="page" id="spring">
+            <div data-role="header">
+                <h1>Spring Maintenance Schedule</h1>
+            </div> <!-- /header -->
+            
+            <div data-role="content">
+                <h2>Set Reminders For:</h2>
+
+                <hr /><form>
+                    <label for="inspect_roof">Inspect Roof:</label>
+                    <select id="inspect_roof" name="inspect_roof" data-role="slider">
+                        <option value="off">Off</option>
+                        <option value="on">On</option>
+                    </select>
+                </form>
+
+                <hr /><form>
+                    <label for="change_filters">Change AC and Heating Filters:</label>
+                    <select id="change_filters" name="change_filters" data-role="slider">
+                        <option value="off">Off</option>
+                        <option value="on">On</option>
+                    </select>
+                </form>
+                
+                <hr /><form>
+                    <label for="clean_screens">Clean window and door screens:</label>
+                    <select id="clean_screens" name="clean_screens" data-role="slider">
+                        <option value="off">Off</option>
+                        <option value="on">On</option>
+                    </select>
+                </form>
+                
+                <hr /><form>
+                    <label for="polish">Polish wood furniture and dust light fixtures and ceiling fans:</label>
+                    <select id="polish" name="polish" data-role="slider">
+                        <option value="off">Off</option>
+                        <option value="on">On</option>
+                    </select>
+                </form>
+                
+                <hr /><form>
+                    <label for="powerwash">Power wash home exterior and plastic exterior furniture:</label>
+                    <select id="powerwash" name="powerwash" data-role="slider">
+                        <option value="off">Off</option>
+                        <option value="on">On</option>
+                    </select>
+                </form>
+                
+                <hr /><form>
+                    <label for="downspouts">Remove debris from gutters and downspouts:</label>
+                    <select id="downspouts" name="downspouts" data-role="slider">
+                        <option value="off">Off</option>
+                        <option value="on">On</option>
+                    </select>
+                </form>
+                
+                <hr /><form>
+                    <label for="batteries">Replace smoke detector and carbon monoxide batteries:</label>
+                    <select id="batteries" name="batteries" data-role="slider">
+                        <option value="off">Off</option>
+                        <option value="on">On</option>
+                    </select>
+                </form>
+                
+                <hr /><form>
+                    <label for="cauking">Inspect all cauking and weather stripping for deterioration:</label>
+                    <select id="cauking" name="cauking" data-role="slider">
+                        <option value="off">Off</option>
+                        <option value="on">On</option>
+                    </select>
+                </form>
+                
+                <hr /><form>
+                    <label for="lint">Vacuum lint from dryer vent:</label>
+                    <select id="lint" name="lint" data-role="slider">
+                        <option value="off">Off</option>
+                        <option value="on">On</option>
+                    </select>
+                </form>
+                
+                <hr /><form>
+                    <label for="exterior_insulation">Remove exterior insulation from water pipes and sprinkler heads:</label>
+                    <select id="exterior_insulation" name="exterior_insulation" data-role="slider">
+                        <option value="off">Off</option>
+                        <option value="on">On</option>
+                    </select>
+                </form>
+                
+                <hr /><form>
+                    <label for="service_ac">Have air conditioner serviced:</label>
+                    <select id="service_ac" name="service_ac" data-role="slider">
+                        <option value="off">Off</option>
+                        <option value="on">On</option>
+                    </select>
+                </form>
+                
+                <hr /><form>
+                    <label for="fertilize">Fertilize lawn:</label>
+                    <select id="fertilize" name="fertilize" data-role="slider">
+                        <option value="off">Off</option>
+                        <option value="on">On</option>
+                    </select>
+                </form>
+                
+                <hr /><form>
+                    <label for="chimney">Inspect Chimney:</label>
+                    <select id="chimney" name="chimney" data-role="slider">
+                        <option value="off">Off</option>
+                        <option value="on">On</option>
+                    </select>
+                </form>
+                
+                <hr /><form>
+                    <label for="septic">Have septic tank pumped and inspected:</label>
+                    <select id="septic" name="septic" data-role="slider">
+                        <option value="off">Off</option>
+                        <option value="on">On</option>
+                    </select>
+                </form>
+                
+            </div><!-- /content -->
+        </div><!-- /page -->
+        <div data-role="page" id="summer">
+            <div data-role="header">
+                <h1>Summer Maintenance Schedule</h1>
+            </div> <!-- /header -->
+            
+            <div data-role="content">
+                <h2>Set Reminders For:</h2>
+
+                <hr /><form>
+                    <label for="garage_door">Oil garage door opener and chain:</label>
+                    <select id="garage_door" name="garage_door" data-role="slider">
+                        <option value="off">Off</option>
+                        <option value="on">On</option>
+                    </select>
+                </form>
+
+                <hr /><form>
+                    <label for="kitchen_filters">Clean stove exhaust filter, dish washer filter, and washing machine filter:</label>
+                    <select id="kitchen_filters" name="kitchen_filters" data-role="slider">
+                        <option value="off">Off</option>
+                        <option value="on">On</option>
+                    </select>
+                </form>
+
+                <hr /><form>
+                    <label for="kitchen_filters">Clean stove exhaust filter, dish washer filter, and washing machine filter:</label>
+                    <select id="kitchen_filters" name="kitchen_filters" data-role="slider">
+                        <option value="off">Off</option>
+                        <option value="on">On</option>
+                    </select>
+                </form>
+
+            </div><!-- /content -->
+        </div><!-- /page -->
+
+
+    </body>
+</html>
