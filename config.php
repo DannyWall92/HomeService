@@ -1,8 +1,8 @@
 <?php
 
-$host = "localhost";
-$dbuser = "dew_app";
-$dbpass = "1!Spider!1";
-$dbname = "dew_homeservice";
+$host = "localhost"; // server where db is located
+$dbuser = "dew_app"; // db user name
+$dbpass = "1!Spider!1"; // db password
+$dbname = "dew_homeservice"; // db name that holds tables
 
 ?>
